@@ -1,0 +1,145 @@
+ACME CORPORATION — HR POLICY MANUAL
+Version 4.0 | Effective: January 1, 2025
+Human Resources Department | Confidential
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+1. LEAVE POLICIES
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+1.1 Annual Leave (Vacation)
+Full-time employees receive:
+  - Years 1–3:   25 days per year
+  - Years 3–5:   27 days per year
+  - Years 5+:    30 days per year
+
+Leave must be requested via the HR portal at least 5 business days
+in advance (2 weeks for leave exceeding 10 days).
+Unused leave may be carried over up to 10 days to the next calendar year.
+All unused leave above 10 days is forfeited on December 31.
+
+1.2 Sick Leave
+  - 15 days per year (non-cumulative, does not carry over)
+  - Medical certificate required for absences exceeding 3 consecutive days
+  - Sick leave during approved annual leave does not count as sick leave
+
+1.3 Parental Leave
+  - Primary Carer (birth/adoption): 26 weeks fully paid, then 13 weeks 60% pay
+  - Secondary Carer:                4 weeks fully paid
+  - Must be taken within 12 months of birth/adoption
+  - Requires 4 weeks advance notice (or as soon as practicable)
+
+1.4 Bereavement Leave
+  - Immediate family (spouse, child, parent, sibling): 5 days paid
+  - Extended family (grandparent, in-law):             3 days paid
+  - Close friend/colleague (at manager discretion):    1 day
+
+1.5 Compassionate Leave
+Granted case-by-case basis. Apply via HR portal with manager approval.
+
+1.6 Public Holidays
+ACME observes all federal/national public holidays in the employee's
+country of employment. A full list is published on the intranet.
+Employees required to work on a public holiday receive 1.5x pay
+or an alternative day off (employee's choice).
+
+1.7 Unpaid Leave
+Available after 12 months of employment. Maximum 3 months.
+Requires VP approval. Benefits suspended during unpaid leave.
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+2. PURCHASE ORDER & PROCUREMENT POLICY
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+2.1 Approval Thresholds (Single Purchase)
+  - Up to $500:         Line Manager approval
+  - $501 – $5,000:      Line Manager + Finance BP approval
+  - $5,001 – $25,000:   Director approval
+  - $25,001 – $100,000: VP approval
+  - Over $100,000:      CFO + CEO approval
+
+2.2 Process
+  1. Raise a Purchase Request in the Procurement system.
+  2. Obtain approvals as per thresholds above.
+  3. Finance issues the official Purchase Order.
+  4. Supplier confirms PO; delivery tracked in system.
+  5. Goods received note (GRN) triggers payment.
+
+2.3 Preferred Suppliers
+Always use pre-approved suppliers where available.
+New supplier onboarding requires Finance BP approval and
+a Supplier Due Diligence form (minimum 10 business days).
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+3. PERFORMANCE MANAGEMENT
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+3.1 Performance Review Cycle
+  - Quarterly Check-ins:  Manager and employee (informal)
+  - Mid-Year Review:      June–July (formal, documented)
+  - Annual Review:        December (formal, links to compensation)
+
+3.2 Performance Ratings
+  1 — Exceptional:    Top 10% performers; accelerated progression
+  2 — Exceeds:        Top 20%; eligible for merit increase > 5%
+  3 — Meets:          On-track employees; standard merit increase
+  4 — Below:          Requires Performance Improvement Plan (PIP)
+  5 — Unsatisfactory: At risk of termination; immediate PIP
+
+3.3 Performance Improvement Plan (PIP)
+A PIP is a 60-day structured plan with clear, measurable goals.
+If goals are not met by day 60, employment may be terminated.
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+4. COMPENSATION & PAYROLL
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+4.1 Pay Frequency
+  - US employees:        Bi-weekly (every other Friday)
+  - International:       Monthly (last business day of month)
+
+4.2 Merit Increases
+Effective April 1 each year, subject to budget approval:
+  - Rating 1 (Exceptional):   8–12% increase
+  - Rating 2 (Exceeds):       5–8% increase
+  - Rating 3 (Meets):         2–4% increase
+  - Rating 4/5:               No increase; PIP active
+
+4.3 Bonus Structure
+Annual bonus paid in March, based on:
+  - Company performance (40%)
+  - Department performance (30%)
+  - Individual performance (30%)
+Target bonus ranges from 5% (IC) to 20% (Director+) of base salary.
+
+4.4 Pay Transparency
+ACME publishes salary bands for all roles on the internal intranet.
+Employees may discuss compensation openly without fear of retaliation.
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+5. LEARNING & DEVELOPMENT
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+5.1 Annual Learning Budget
+Each employee receives $2,000 per calendar year for:
+  - External courses and certifications
+  - Conference attendance
+  - Books and learning materials
+  - Online learning platforms (Coursera, Udemy, etc.)
+
+5.2 Internal Training
+ACME Academy offers 200+ online courses on business, technical, and
+leadership topics. All courses are free and self-paced.
+
+5.3 Tuition Reimbursement
+Employees pursuing a work-related degree may apply for up to
+$5,000/year reimbursement (A/B grade required; 2-year service bond).
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+CONTACT
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+HR Helpdesk:    hr@acmecorp.internal | Ext. 4000
+Payroll:        payroll@acmecorp.internal | Ext. 4002
+L&D Team:       learning@acmecorp.internal
+
+[END OF HR POLICY MANUAL v4.0]

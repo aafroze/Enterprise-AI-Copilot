@@ -1,0 +1,124 @@
+ACME CORPORATION — Q2 2025 BUSINESS PERFORMANCE REPORT
+Quarter 2: April 1 – June 30, 2025
+Prepared by: Finance & Strategy Team
+Classification: Confidential — Internal Distribution Only
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+EXECUTIVE SUMMARY
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+ACME Corporation achieved record quarterly revenue in Q2 2025, driven by
+strong enterprise AI product sales and expansion in the APAC region.
+Total revenue reached $487.2M, representing 18.4% year-over-year growth
+compared to Q2 2024 ($411.5M). Operating margin improved to 24.3% (Q2 2024: 21.8%).
+
+Key headlines:
+  ✅ Revenue: $487.2M (+18.4% YoY)
+  ✅ Operating Income: $118.4M (+25.1% YoY)
+  ✅ EBITDA: $141.6M (29.1% margin)
+  ✅ Net Income: $89.3M (+22.7% YoY)
+  ✅ EPS: $1.84 (vs. $1.50 in Q2 2024)
+  ⚠️  Cash Position: $342.1M (down 8.2% from Q1 due to acquisitions)
+  ✅ Headcount: 28,412 (net adds: +847 in Q2)
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+1. REVENUE BREAKDOWN BY BUSINESS UNIT
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+Business Unit             Q2 2025     Q2 2024     YoY Growth
+─────────────────────────────────────────────────────────────
+AI Products & Platforms   $198.4M     $152.1M     +30.4%
+Enterprise Cloud Services $137.6M     $121.3M     +13.4%
+Professional Services     $89.1M      $81.7M      +9.1%
+Managed Services          $62.1M      $56.4M      +10.1%
+─────────────────────────────────────────────────────────────
+TOTAL                     $487.2M     $411.5M     +18.4%
+
+Note: AI Products & Platforms grew 30.4% YoY, now representing
+40.7% of total revenue (Q2 2024: 37.0%). This unit is the company's
+primary growth engine following the launch of ACME Intelligence Suite
+in March 2025.
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+2. REGIONAL PERFORMANCE
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+Region          Q2 2025    Q2 2024    YoY Growth  % of Total
+──────────────────────────────────────────────────────────────
+Americas        $224.1M    $198.7M    +12.8%      46.0%
+EMEA            $148.3M    $130.2M    +13.9%      30.4%
+APAC            $114.8M    $82.6M     +38.9%      23.6%
+──────────────────────────────────────────────────────────────
+TOTAL           $487.2M    $411.5M    +18.4%      100%
+
+APAC was the standout region with 38.9% YoY growth, led by
+enterprise deals in Singapore, Australia, and Japan.
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+3. PROFITABILITY ANALYSIS
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+3.1 Gross Profit
+  Q2 2025 Gross Profit:  $292.3M  (Gross Margin: 59.9%)
+  Q2 2024 Gross Profit:  $243.1M  (Gross Margin: 59.1%)
+  YoY Change:            +$49.2M  (+20.2%)
+
+3.2 Operating Expenses
+  R&D:               $72.4M  (14.9% of revenue)
+  Sales & Marketing: $65.8M  (13.5% of revenue)
+  G&A:               $35.7M  (7.3% of revenue)
+  Total OpEx:        $173.9M
+
+3.3 Revenue decline risk: Americas growth slowed to 12.8%
+due to macroeconomic pressures in the US mid-market segment.
+The sales team has initiated a recovery plan targeting 15 new
+enterprise accounts in Q3.
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+4. KEY INITIATIVES — Q2 2025
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+4.1 Product Launches
+  - ACME Intelligence Suite v2.0 (April) — 847 enterprise activations
+  - ACME DataBridge (June) — early access programme: 120 customers
+
+4.2 Partnerships
+  - Strategic partnership announced with Microsoft Azure (June 12)
+  - Expanded Google Cloud Marketplace listing (April 28)
+
+4.3 Acquisitions
+  - Acquired DataVault Analytics (closed May 15) for $48.5M
+  - Integration on track; expected to contribute $12M ARR in H2 2025
+
+4.4 Cost Optimisation
+  - Cloud infrastructure costs reduced by $8.2M (12% savings)
+    through consolidation of legacy systems
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+5. Q3 2025 OUTLOOK
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+Revenue Guidance:   $510M – $525M  (+15–18% YoY)
+Operating Margin:   Expected 24.5–25.5%
+Key Watch Items:
+  - APAC expansion: 3 new country offices planned (India, Thailand, Vietnam)
+  - ACME Intelligence Suite v2.1 release (September)
+  - Completion of DataVault integration
+  - Americas mid-market recovery programme
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+6. RISK FACTORS
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+  HIGH:    Macroeconomic slowdown in Americas mid-market
+  MEDIUM:  Competition from new entrants in AI platform space
+  MEDIUM:  Integration risk from DataVault acquisition
+  LOW:     FX headwinds in EMEA (GBP/EUR volatility)
+  LOW:     Regulatory changes in EU AI Act compliance
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+PREPARED BY:  Finance & Strategy Team
+REVIEWED BY:  CFO — Sarah Mitchell
+DATE:         July 5, 2025
+
+[END OF Q2 2025 PERFORMANCE REPORT]

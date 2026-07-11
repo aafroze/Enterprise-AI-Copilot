@@ -1,0 +1,157 @@
+ACME CORPORATION — TRAVEL & EXPENSE POLICY
+Version 2.1 | Effective: March 1, 2025
+Finance & Operations | Confidential
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+1. PURPOSE & SCOPE
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+This policy governs all business travel and expense reimbursement for
+ACME Corporation employees globally. It applies to all full-time,
+part-time, and contract employees travelling on company business.
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+2. TRAVEL APPROVAL
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+2.1 All business travel must be approved BEFORE booking:
+  - Domestic travel (< $500):     Line Manager approval
+  - Domestic travel ($500–$2000): Line Manager + Finance BP approval
+  - International travel:         VP-level approval required
+  - Executive travel (C-Suite):   CFO approval required
+
+2.2 Travel requests must be submitted via the Travel Portal at least:
+  - Domestic: 5 business days in advance
+  - International: 15 business days in advance
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+3. FLIGHTS
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+3.1 Class of Travel
+  - Flights under 4 hours:    Economy class only
+  - Flights 4–8 hours:        Premium Economy (VP+ may use Business)
+  - Flights over 8 hours:     Business class (Economy for IC employees)
+  - First class:              Never reimbursed, regardless of role
+
+3.2 Booking
+All flights must be booked through the approved corporate travel
+portal (Concur) or via the travel helpdesk. Personal bookings
+require pre-approval and are reimbursed at economy equivalent rate.
+
+3.3 Frequent Flyer Miles
+Employees may retain personal frequent flyer miles earned from
+business travel, provided the flights are booked at standard rates.
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+4. ACCOMMODATION
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+4.1 Hotel Limits (per night, room rate only)
+  - Tier 1 Cities (NYC, London, SF, Tokyo, Singapore): $250/night
+  - Tier 2 Cities (Major metros):                      $180/night
+  - Tier 3 Cities (Secondary):                         $120/night
+
+4.2 Extended Stays
+For assignments exceeding 14 nights, employees should use a
+company-negotiated serviced apartment. Contact Facilities.
+
+4.3 Airbnb/Private Rentals
+Permitted up to the equivalent hotel rate limit for that city tier.
+Receipts required. Personal safety is the employee's responsibility.
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+5. MEALS & DAILY ALLOWANCES (PER DIEM)
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+5.1 Per Diem Rates
+  - Domestic (USA):         $75/day
+  - International — EMEA:  $90/day
+  - International — APAC:  $85/day
+  - International — LATAM: $70/day
+
+5.2 Meals with Clients
+Business meals with clients or external partners may be claimed
+above per diem limits, subject to:
+  - Pre-approval from line manager
+  - Receipt + list of attendees + business purpose required
+  - Maximum $150 per person for client meals
+  - Alcohol: Maximum $30 per person, must be shown separately
+
+5.3 Alcohol Policy
+Alcohol may only be claimed at client entertainment events
+(not internal meals) and within the $30/person limit.
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+6. GROUND TRANSPORT
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+6.1 Airport Transfers
+  - Company car/driver: Approved for VP and above
+  - Taxi/Uber/Lyft: Reimbursed at actual cost with receipt
+  - Public transport: Preferred where practical; fully reimbursed
+
+6.2 Rental Cars
+  - Permitted when public transport is impractical
+  - Standard category only (no SUV unless 4+ passengers)
+  - Always purchase CDW/LDW insurance through the portal
+
+6.3 Personal Vehicle
+  - Reimbursed at IRS standard mileage rate ($0.67/mile for 2025)
+  - Submit mileage log with start/end odometer readings
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+7. EXPENSE SUBMISSION & REIMBURSEMENT
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+7.1 Submission Deadline
+All expense reports must be submitted within 30 calendar days
+of travel completion. Late submissions may be declined.
+
+7.2 Required Documentation
+  - Original receipts for all expenses over $25
+  - Business purpose stated clearly on each line item
+  - Manager approval signature or digital approval in Concur
+
+7.3 Reimbursement Timeline
+  - Standard processing: 10 business days
+  - Expedited (with Finance BP approval): 3 business days
+
+7.4 Non-Reimbursable Expenses
+The following are NEVER reimbursed:
+  - Personal entertainment (cinema, sports events, spa)
+  - Traffic/parking fines and tolls (unless on approved route)
+  - Airline seat upgrades not pre-approved
+  - Minibar charges
+  - Personal phone calls
+  - Pet care
+  - Lost or stolen items
+  - Credit card fees or interest
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+8. CORPORATE CREDIT CARD
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+Corporate cards are issued to employees who travel more than
+3 times per year. Cardholders must:
+  - Submit expense reports by the 5th of each month
+  - Never use the card for personal expenses
+  - Report a lost card within 4 hours
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+9. POLICY VIOLATIONS
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+Submitting fraudulent expense claims is a serious disciplinary
+offence and may result in termination and legal action.
+Repeated policy violations result in suspension of travel privileges.
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+CONTACTS
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+Travel Helpdesk:    travel@acmecorp.internal | Ext. 4010
+Finance BP (NA):    finance-na@acmecorp.internal
+Concur Support:     concur-support@acmecorp.internal
+
+[END OF TRAVEL & EXPENSE POLICY v2.1]

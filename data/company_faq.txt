@@ -1,0 +1,153 @@
+ACME CORPORATION — FREQUENTLY ASKED QUESTIONS (FAQ)
+Version 1.8 | Updated: June 2025
+Internal Knowledge Base | For Employee Use
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+SECTION A: IT & SYSTEMS
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+Q: How do I reset my password?
+A: Go to password.acmecorp.internal and follow the self-service reset.
+   If you are locked out, call IT Helpdesk on Ext. 4001 (24/7).
+   Passwords must be at least 12 characters with uppercase, lowercase,
+   number, and symbol. Passwords expire every 90 days.
+
+Q: How do I connect to the VPN?
+A: Download GlobalProtect VPN from the IT portal. Use your ACME domain
+   credentials. MFA is required. Contact IT if you have connection issues.
+
+Q: My laptop is not working. What do I do?
+A: Raise a ticket at helpdesk.acmecorp.internal or call Ext. 4001.
+   For hardware failures, a loaner laptop can be arranged within 4 hours.
+
+Q: Can I use personal devices for work?
+A: Yes, through the BYOD programme. Enroll your device at
+   mdm.acmecorp.internal. The ACME MDM profile will be installed.
+   Personal data and work data are kept separate.
+
+Q: How do I access the company intranet?
+A: Visit intranet.acmecorp.internal from any browser while on VPN.
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+SECTION B: HR & PAYROLL
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+Q: When is payday?
+A: US employees are paid bi-weekly on Fridays. International employees
+   are paid on the last business day of each month.
+
+Q: How do I view my payslip?
+A: Log in to Workday (workday.acmecorp.internal) → Payroll → Payslips.
+   Payslips are available 2 business days before payday.
+
+Q: How do I request annual leave?
+A: Submit leave requests via Workday → Time Off → Request.
+   Allow 5 business days for manager approval.
+   For leave longer than 10 days, allow 2 weeks notice.
+
+Q: Who is my HR Business Partner?
+A: Your HRBP is listed in Workday under Team → HR Contact.
+   You can also email hr@acmecorp.internal for general queries.
+
+Q: How do I update my personal details?
+A: Log in to Workday and update under Personal → Personal Information.
+   For legal name changes, you must submit supporting documentation to HR.
+
+Q: What is the EAP (Employee Assistance Programme)?
+A: The EAP provides free, confidential counselling and support services.
+   Available 24/7 at eap.acmecorp.internal or call 1-800-ACME-HELP.
+   Services include mental health, financial advice, and legal guidance.
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+SECTION C: FINANCE & PROCUREMENT
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+Q: How do I submit an expense report?
+A: Submit via Concur (concur.acmecorp.internal). Attach all receipts.
+   Reports must be submitted within 30 days of travel.
+   For help, contact travel@acmecorp.internal.
+
+Q: What is the purchase order process?
+A: Raise a PR in the Procurement system. Your manager approves.
+   Finance reviews and issues a PO. Refer to HR Policy Manual
+   Section 2 for approval thresholds.
+
+Q: How do I get a corporate credit card?
+A: Apply through Finance BP if you travel more than 3 times per year.
+   Contact finance-na@acmecorp.internal for the application form.
+
+Q: When are invoices paid?
+A: Standard payment terms are Net 30. Expedited payment (Net 7)
+   is available with Finance Director approval.
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+SECTION D: FACILITIES & OFFICE
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+Q: How do I book a meeting room?
+A: Use the Room Booking system in Outlook Calendar or
+   at rooms.acmecorp.internal. Rooms auto-release if not checked in
+   within 15 minutes of the booking start time.
+
+Q: How do I get an office access card?
+A: New employees receive access cards from Facilities on Day 1.
+   If you lose your card, report immediately to security@acmecorp.internal
+   and Facilities (Ext. 4020). Replacement takes 1 business day.
+
+Q: Where can I park?
+A: Parking permits are issued on a first-come basis. Apply via
+   facilities.acmecorp.internal. Monthly cost is subsidised at $75/month
+   (pre-tax deducted from payroll).
+
+Q: Is there a cafeteria?
+A: Yes, cafeteria is open 07:30–15:00 Monday to Friday.
+   Subsidised meals are available. Dietary options labelled clearly.
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+SECTION E: LEARNING & CERTIFICATIONS
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+Q: How do I access my learning budget?
+A: Submit a Learning Request in Workday → Learning → Development.
+   Obtain line manager approval. Finance BP approves claims over $500.
+   Receipts required for reimbursement.
+
+Q: What certifications does ACME sponsor?
+A: ACME sponsors AWS, Azure, GCP, PMP, CISSP, and AI/ML certifications.
+   Full list at learning.acmecorp.internal. First attempt fully paid;
+   retakes require manager approval.
+
+Q: Can I attend external conferences?
+A: Yes, using your $2,000 learning budget. Registration + travel expenses
+   must be pre-approved via the Travel Portal.
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+SECTION F: SAFETY & SECURITY
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+Q: How do I report a security incident?
+A: Immediately email security@acmecorp.internal or call Ext. 4030.
+   For data breaches, contact the CISO directly at ciso@acmecorp.internal.
+   Do not delay — regulatory notification deadlines apply.
+
+Q: What should I do in an emergency at the office?
+A: Follow the Emergency Evacuation Plan posted near all exits.
+   Fire assembly point is the car park on Level B1.
+   First aid kits are located at every reception desk.
+
+Q: How do I report unethical behaviour?
+A: Use the Ethics Hotline (anonymous): 1-800-ACME-ETH or
+   ethics@acmecorp.internal. All reports are investigated confidentially.
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+GENERAL CONTACTS
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+IT Helpdesk:        Ext. 4001 | it@acmecorp.internal
+HR Department:      Ext. 4000 | hr@acmecorp.internal
+Finance:            Ext. 4002 | finance-na@acmecorp.internal
+Facilities:         Ext. 4020 | facilities@acmecorp.internal
+Security:           Ext. 4030 | security@acmecorp.internal
+Ethics Hotline:     1-800-ACME-ETH
+
+[END OF COMPANY FAQ v1.8]
