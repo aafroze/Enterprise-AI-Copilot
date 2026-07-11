@@ -289,7 +289,8 @@ class EnterpriseAgent:
                 "chat_history": chat_history_str,
             })
         except Exception as exc:
-            logger.error("Agent invocation error: %s", exc)
+            import traceback as _tb
+            logger.error("Agent invocation error: %s\n%s", exc, _tb.format_exc())
             return {
                 "answer": (
                     "I'm sorry, I encountered an unexpected error processing your request. "
