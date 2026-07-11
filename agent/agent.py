@@ -144,6 +144,22 @@ class EnterpriseAgent:
     ) -> str:
         prompt_map = {"V1": PROMPT_V1, "V2": PROMPT_V2, "V3": PROMPT_V3}
         base = prompt_map.get(version, PROMPT_V3)
+        
+        # Clean up any literal placeholders used for RAG chains that conflict with ReAct format
+        for placeholder in [
+            "Context from knowledge base:",
+            "Conversation history:",
+            "User question:",
+            "{context}",
+            "{chat_history}",
+            "{question}",
+        ]:
+            base = base.replace(placeholder, "")
+        
+        # Clean up trailing instructions if they conflict
+        base = base.replace("Provide a helpful, safe, grounded response:", "")
+        base = base.strip()
+        
         return build_adaptive_prompt(base, preferred_style, preferred_format)
 
     def _build_agent(
@@ -169,7 +185,7 @@ class EnterpriseAgent:
             tools=self._tools,
             max_iterations=config.MAX_ITERATIONS,
             handle_parsing_errors=True,
-            early_stopping_method="generate",
+            early_stopping_method="force",
             verbose=True,
             return_intermediate_steps=True,
         )
