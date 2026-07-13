@@ -367,85 +367,42 @@ def render_chat() -> None:
         with col:
             if st.button(q[:30] + "…", key=f"quick_{i}", use_container_width=True):
                 st.session_state._pending_input = q
+                st.rerun()
 
     st.divider()
 
     # Chat history
-    chat_container = st.container()
-    with chat_container:
-        for msg in st.session_state.messages:
-            if msg["role"] == "user":
-                st.markdown(
-                    f'<div class="user-bubble">👤 {msg["content"]}</div>',
-                    unsafe_allow_html=True,
-                )
-            else:
+    for msg in st.session_state.messages:
+        with st.chat_message(msg["role"]):
+            st.markdown(msg["content"])
+            if msg["role"] == "assistant":
                 meta = msg.get("meta", {})
-                safety = meta.get("safety_triggered", False)
-                escalated = meta.get("escalated", False)
                 tools = meta.get("tools_used", [])
                 sources = meta.get("sources", [])
                 latency = meta.get("latency_ms", 0)
-
+                safety = meta.get("safety_triggered", False)
+                escalated = meta.get("escalated", False)
+                badges = []
                 if safety:
-                    st.markdown(
-                        f'<div class="safety-banner">🛡️ <strong>Safety Guardrail Triggered</strong><br>'
-                        f'{msg["content"]}</div>',
-                        unsafe_allow_html=True,
-                    )
-                elif escalated:
-                    st.markdown(
-                        f'<div class="escalation-banner">⚠️ <strong>Escalated to Human Analyst</strong><br>'
-                        f'{msg["content"]}</div>',
-                        unsafe_allow_html=True,
-                    )
-                else:
-                    st.markdown(
-                        f'<div class="assistant-bubble">🤖 {msg["content"]}</div>',
-                        unsafe_allow_html=True,
-                    )
-
-                # Metadata row
-                meta_parts = []
+                    badges.append("Safety guardrail triggered")
+                if escalated:
+                    badges.append("Escalated to human analyst")
                 if tools:
-                    meta_parts.append(
-                        "".join(f'<span class="tool-chip">🔧 {t}</span>' for t in tools)
-                    )
+                    badges.append("Tools: " + ", ".join(tools))
                 if sources:
-                    meta_parts.append(
-                        "".join(f'<span class="source-pill">📄 {s}</span>' for s in sources)
-                    )
+                    badges.append("Sources: " + ", ".join(sources))
                 if latency:
-                    meta_parts.append(f'<span style="font-size:0.7rem;color:#718096;">{latency}ms</span>')
-                if meta_parts:
-                    st.markdown(" ".join(meta_parts), unsafe_allow_html=True)
+                    badges.append(f"Latency: {latency}ms")
+                if badges:
+                    st.caption(" | ".join(badges))
 
     st.divider()
 
-    # Input
-    with st.form("chat_form"):
-        pending = st.session_state.get("_pending_input", "")
-        if "chat_input" not in st.session_state:
-            st.session_state.chat_input = ""
-        if pending:
-            st.session_state.chat_input = pending
-            st.session_state._pending_input = ""
-
-        user_input = st.text_input(
-            "Your question",
-            placeholder="Ask about company policies, reports, or business metrics...",
-            label_visibility="collapsed",
-            key="chat_input",
-        )
-        submitted = st.form_submit_button("Send ➤", use_container_width=False)
-
-    if submitted:
-        cleaned_input = user_input.strip()
-        if cleaned_input:
-            _handle_chat(cleaned_input)
-            st.session_state.chat_input = ""
-        else:
-            st.warning("Please enter a question before sending.")
+    pending = st.session_state.pop("_pending_input", "")
+    prompt = st.chat_input("Ask about company policies, reports, or business metrics...")
+    user_input = prompt or pending
+    if user_input:
+        _handle_chat(user_input.strip())
 
     # Feedback
     if st.session_state.messages:
@@ -502,7 +459,8 @@ def _handle_chat(user_input: str) -> None:
         logger.error(f"[STREAMLIT] Agent chat error: {type(exc).__name__}: {exc}")
         logger.error(f"[STREAMLIT] Full traceback:\n{tb}")
         st.error(f"Error: {type(exc).__name__}")
-        st.code(tb, language="text")
+        with st.expander("Show error details", expanded=True):
+            st.code(tb, language="text")
         answer = f"I encountered an error: {str(exc)[:150]}"
         meta = {
             "safety_triggered": False,

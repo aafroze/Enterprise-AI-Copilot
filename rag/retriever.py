@@ -91,12 +91,15 @@ class DocumentRetriever:
                 "I recommend escalating this question to a human analyst."
             )
         parts: List[str] = []
-        for i, doc in enumerate(docs, 1):
+        for i, doc in enumerate(docs[:3], 1):
             source = doc.metadata.get("source_file", "Unknown")
             page = doc.metadata.get("page", "")
             page_info = f", page {page + 1}" if page != "" else ""
+            content = doc.page_content.strip()
+            if len(content) > 900:
+                content = content[:900].rsplit(" ", 1)[0] + "..."
             parts.append(
-                f"**[Source {i}: {source}{page_info}]**\n{doc.page_content.strip()}"
+                f"**[Source {i}: {source}{page_info}]**\n{content}"
             )
         return "\n\n---\n\n".join(parts)
 

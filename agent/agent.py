@@ -15,11 +15,15 @@ from __future__ import annotations
 import time
 from typing import Any, Dict, List, Optional
 
-from langchain_classic.agents import AgentExecutor, create_react_agent
 from langchain_core.prompts import PromptTemplate
 from langchain_openai import ChatOpenAI
-from langchain_core.messages import SystemMessage
+from langchain_core.messages import HumanMessage, SystemMessage
 from loguru import logger
+
+try:
+    from langchain_classic.agents import AgentExecutor, create_react_agent
+except ImportError:  # pragma: no cover - compatibility for older installs
+    from langchain.agents import AgentExecutor, create_react_agent
 
 from agent.config import config
 from agent.prompts import PROMPT_V1, PROMPT_V2, PROMPT_V3, build_adaptive_prompt
@@ -288,20 +292,62 @@ class EnterpriseAgent:
                 "input": enriched_input,
                 "chat_history": chat_history_str,
             })
-        except Exception:
+        except Exception as exc:
             logger.exception("Agent invocation error")
-            return {
-                "answer": (
-                    "I'm sorry, I encountered an unexpected error processing your request. "
-                    "Please try again or contact your system administrator."
-                ),
-                "sources": [],
-                "tools_used": [],
-                "latency_ms": int((time.perf_counter() - start) * 1000),
-                "safety_triggered": False,
-                "escalated": False,
-                "intermediate_steps": [],
-            }
+            logger.warning("Falling back to direct RAG synthesis for: %s", user_input[:80])
+            try:
+                docs = retriever.retrieve(user_input)
+                context = retriever.format_results(docs)
+                fallback_messages = [
+                    SystemMessage(
+                        content=(
+                            "You are the Enterprise AI Operations Copilot. "
+                            "Answer using only the provided context. "
+                            "If the context does not contain the answer, say you could not find it "
+                            "in the available documentation and recommend escalation to a human analyst. "
+                            "Keep the response concise and grounded."
+                        )
+                    ),
+                    HumanMessage(
+                        content=(
+                            f"Question: {user_input}\n\n"
+                            f"Context:\n{context}"
+                        )
+                    ),
+                ]
+                fallback_response = self._llm.invoke(fallback_messages)
+                answer = getattr(fallback_response, "content", "") or (
+                    "I could not generate a response from the available documentation."
+                )
+                sources = []
+                for doc in docs:
+                    source = doc.metadata.get("source_file", "Unknown")
+                    if source not in sources:
+                        sources.append(source)
+                latency_ms = int((time.perf_counter() - start) * 1000)
+                return {
+                    "answer": answer,
+                    "sources": sources,
+                    "tools_used": ["search_documents"] if docs else [],
+                    "latency_ms": latency_ms,
+                    "safety_triggered": False,
+                    "escalated": False,
+                    "intermediate_steps": [],
+                }
+            except Exception:
+                logger.exception("Fallback RAG synthesis also failed")
+                return {
+                    "answer": (
+                        "I'm sorry, I encountered an unexpected error processing your request. "
+                        "Please try again or contact your system administrator."
+                    ),
+                    "sources": [],
+                    "tools_used": [],
+                    "latency_ms": int((time.perf_counter() - start) * 1000),
+                    "safety_triggered": False,
+                    "escalated": False,
+                    "intermediate_steps": [],
+                }
 
         answer = result.get("output", "I could not generate a response.")
         intermediate_steps = result.get("intermediate_steps", [])
