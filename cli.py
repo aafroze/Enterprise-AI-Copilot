@@ -10,9 +10,6 @@ This provides a chat-style loop that mirrors the Streamlit app:
 
 from __future__ import annotations
 
-import sys
-from typing import Optional
-
 from dotenv import load_dotenv
 
 load_dotenv()
