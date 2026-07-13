@@ -288,9 +288,8 @@ class EnterpriseAgent:
                 "input": enriched_input,
                 "chat_history": chat_history_str,
             })
-        except Exception as exc:
-            import traceback as _tb
-            logger.error("Agent invocation error: %s\n%s", exc, _tb.format_exc())
+        except Exception:
+            logger.exception("Agent invocation error")
             return {
                 "answer": (
                     "I'm sorry, I encountered an unexpected error processing your request. "
@@ -331,10 +330,7 @@ class EnterpriseAgent:
 
         latency_ms = int((time.perf_counter() - start) * 1000)
         logger.info(
-            "[AGENT] Responded in %dms | tools=%s | safety=%s",
-            latency_ms,
-            tools_used,
-            safety.is_safe,
+            f"[AGENT] Responded in {latency_ms}ms | tools={tools_used} | safety={safety.is_safe}"
         )
 
         return {
@@ -379,7 +375,7 @@ class EnterpriseAgent:
             self.preference_store.get_style(),
             self.preference_store.get_format(),
         )
-        logger.info("Prompt switched to %s", version)
+        logger.info(f"Prompt switched to {version}")
 
 
 # ── Phase 2: Simple LLM without RAG ──────────────────────────────────────────

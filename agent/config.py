@@ -3,9 +3,13 @@ config.py — Centralised configuration loaded from environment variables.
 """
 
 import os
+from pathlib import Path
 from dotenv import load_dotenv
 
-load_dotenv()
+# Ensure .env is loaded relative to the repository root, not just the current cwd.
+# Use override=True to ensure env vars from .env take precedence.
+ROOT = Path(__file__).resolve().parents[1]
+load_dotenv(dotenv_path=ROOT / ".env", override=True)
 
 
 class Config:

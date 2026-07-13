@@ -19,6 +19,10 @@ from pathlib import Path
 
 import streamlit as st
 from loguru import logger
+from dotenv import load_dotenv
+
+# ── Environment setup ──────────────────────────────────────────────────────────
+load_dotenv()
 
 # ── Path setup ────────────────────────────────────────────────────────────────
 ROOT = Path(__file__).parent
@@ -218,6 +222,7 @@ _init_session()
 def load_agent(prompt_version: str = "V3") -> None:
     """Lazy-load the agent so the UI doesn't block on startup."""
     try:
+        logger.info(f"[STREAMLIT] Loading agent with prompt version {prompt_version}")
         from agent.agent import EnterpriseAgent
         prefs = {}
         if st.session_state.agent:
@@ -228,12 +233,14 @@ def load_agent(prompt_version: str = "V3") -> None:
         st.session_state.agent = EnterpriseAgent(prompt_version=prompt_version, **prefs)
         st.session_state.agent_ready = True
         st.session_state.prompt_version = prompt_version
+        logger.info(f"[STREAMLIT] Agent loaded successfully")
     except EnvironmentError as exc:
+        logger.error(f"[STREAMLIT] Configuration Error: {exc}")
         st.error(f"⚠️ Configuration Error: {exc}")
         st.stop()
     except Exception as exc:
+        logger.error(f"[STREAMLIT] Agent failed to load: {exc}", exc_info=True)
         st.error(f"❌ Agent failed to load: {exc}")
-        logger.exception("Agent load failure")
         st.stop()
 
 
@@ -416,21 +423,29 @@ def render_chat() -> None:
     st.divider()
 
     # Input
-    with st.form("chat_form", clear_on_submit=True):
-        pending = getattr(st.session_state, "_pending_input", "")
+    with st.form("chat_form"):
+        pending = st.session_state.get("_pending_input", "")
+        if "chat_input" not in st.session_state:
+            st.session_state.chat_input = ""
+        if pending:
+            st.session_state.chat_input = pending
+            st.session_state._pending_input = ""
+
         user_input = st.text_input(
             "Your question",
-            value=pending,
             placeholder="Ask about company policies, reports, or business metrics...",
             label_visibility="collapsed",
+            key="chat_input",
         )
         submitted = st.form_submit_button("Send ➤", use_container_width=False)
 
-    if hasattr(st.session_state, "_pending_input"):
-        del st.session_state._pending_input
-
-    if submitted and user_input.strip():
-        _handle_chat(user_input.strip())
+    if submitted:
+        cleaned_input = user_input.strip()
+        if cleaned_input:
+            _handle_chat(cleaned_input)
+            st.session_state.chat_input = ""
+        else:
+            st.warning("Please enter a question before sending.")
 
     # Feedback
     if st.session_state.messages:
@@ -451,24 +466,60 @@ def render_chat() -> None:
 
 def _handle_chat(user_input: str) -> None:
     """Process chat input through the agent and update session state."""
+    print(f"[DEBUG] _handle_chat called with: {user_input[:50]}")
+    
     if not st.session_state.agent_ready:
+        print("[DEBUG] Agent not ready, loading...")
         with st.spinner("🚀 Loading agent..."):
             ensure_ingested()
             load_agent(st.session_state.prompt_version)
+        print("[DEBUG] Agent loaded")
 
     st.session_state.messages.append({"role": "user", "content": user_input})
 
-    with st.spinner("🤔 Thinking..."):
-        result = st.session_state.agent.chat(user_input)
+    result = None
+    try:
+        print("[DEBUG] Calling agent.chat()...")
+        with st.spinner("🤔 Thinking..."):
+            logger.info(f"[STREAMLIT] Chat input: {user_input[:80]}")
+            result = st.session_state.agent.chat(user_input)
+            logger.info(f"[STREAMLIT] Chat result received: {result.get('answer', '')[:80]}")
+            print(f"[DEBUG] Agent returned: {result}")
 
-    answer = result["answer"]
-    meta = {
-        "safety_triggered": result["safety_triggered"],
-        "escalated": result["escalated"],
-        "tools_used": result["tools_used"],
-        "sources": result["sources"],
-        "latency_ms": result["latency_ms"],
-    }
+        answer = result["answer"]
+        meta = {
+            "safety_triggered": result["safety_triggered"],
+            "escalated": result["escalated"],
+            "tools_used": result["tools_used"],
+            "sources": result["sources"],
+            "latency_ms": result["latency_ms"],
+        }
+    except Exception as exc:
+        print(f"[DEBUG] Exception in _handle_chat: {type(exc).__name__}: {exc}")
+        import traceback
+        tb = traceback.format_exc()
+        print(f"[DEBUG] Traceback:\n{tb}")
+        logger.error(f"[STREAMLIT] Agent chat error: {type(exc).__name__}: {exc}")
+        logger.error(f"[STREAMLIT] Full traceback:\n{tb}")
+        st.error(f"Error: {type(exc).__name__}")
+        st.code(tb, language="text")
+        answer = f"I encountered an error: {str(exc)[:150]}"
+        meta = {
+            "safety_triggered": False,
+            "escalated": False,
+            "tools_used": [],
+            "sources": [],
+            "latency_ms": 0,
+        }
+        result = None
+        # Don't rerun on error - just display message and return
+        st.session_state.messages.append({
+            "role": "assistant",
+            "content": answer,
+            "meta": meta,
+        })
+        st.session_state.total_queries += 1
+        return
 
     st.session_state.messages.append({
         "role": "assistant",
@@ -501,8 +552,6 @@ def _handle_chat(user_input: str) -> None:
         )
     except Exception:
         pass
-
-    st.rerun()
 
 
 # ── Phase Demo ────────────────────────────────────────────────────────────────
@@ -759,9 +808,22 @@ def render_evaluation() -> None:
         st.warning("⚠️ Agent not loaded. Go to Main Chat and send a message first.")
     else:
         if st.button("🚀 Run Full Evaluation Suite", type="primary"):
+            from agent.agent import EnterpriseAgent
             from evaluation.evaluator import run_evaluation, save_report
+
+            prefs = {}
+            if st.session_state.agent:
+                prefs = {
+                    "preferred_style": st.session_state.agent.preference_store.get_style(),
+                    "preferred_format": st.session_state.agent.preference_store.get_format(),
+                }
+
             with st.spinner("Running 20 test cases... this may take 2–3 minutes..."):
-                output = run_evaluation(st.session_state.agent)
+                eval_agent = EnterpriseAgent(
+                    prompt_version=st.session_state.prompt_version,
+                    **prefs,
+                )
+                output = run_evaluation(eval_agent)
 
             metrics = output["metrics"]
             results = output["results"]

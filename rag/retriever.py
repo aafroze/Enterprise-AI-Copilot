@@ -50,7 +50,7 @@ class DocumentRetriever:
             embedding_function=self._embeddings,
             persist_directory=config.CHROMA_PERSIST_DIR,
         )
-        logger.debug("DocumentRetriever connected to ChromaDB at '%s'.", config.CHROMA_PERSIST_DIR)
+        logger.debug(f"DocumentRetriever connected to ChromaDB at '{config.CHROMA_PERSIST_DIR}'.")
 
     def retrieve(self, query: str, k: Optional[int] = None) -> List[Document]:
         """
@@ -67,7 +67,7 @@ class DocumentRetriever:
         k = k or config.RETRIEVER_K
         try:
             results = self._vectorstore.similarity_search(query, k=k)  # type: ignore[union-attr]
-            logger.info("[RAG] Query: '%s' → %d results", query[:80], len(results))
+            logger.info(f"[RAG] Query: '{query[:80]}' → {len(results)} results")
             return results
         except Exception as exc:
             logger.error("[RAG] Retrieval failed: %s", exc)
@@ -102,7 +102,7 @@ class DocumentRetriever:
 
     def search_and_format(self, query: str) -> str:
         """Search and return formatted results — used as the Tool function."""
-        logger.info("[TOOL] DocumentSearch called: '%s'", query[:80])
+        logger.info(f"[TOOL] DocumentSearch called: '{query[:80]}'")
         docs = self.retrieve(query)
         return self.format_results(docs)
 

@@ -1,0 +1,1 @@
+id,category,phase,user_input,expected_behavior,answer_snippet,tools_used,safety_triggered,escalated,latency_ms,passed,failure_reasons

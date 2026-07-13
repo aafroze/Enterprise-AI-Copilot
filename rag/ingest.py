@@ -123,9 +123,7 @@ def ingest(data_dir: str, reset: bool = False) -> Chroma:
     chunks = chunk_documents(documents)
     vectorstore.add_documents(chunks)
     logger.success(
-        "Ingestion complete. %d chunks stored in ChromaDB at '%s'.",
-        len(chunks),
-        config.CHROMA_PERSIST_DIR,
+        f"Ingestion complete. {len(chunks)} chunks stored in ChromaDB at '{config.CHROMA_PERSIST_DIR}'."
     )
     return vectorstore
 

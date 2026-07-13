@@ -23,7 +23,7 @@ from evaluation.test_cases import TEST_SUITE, TestCase
 from agent.safety import check_safety
 
 
-REPORT_DIR = os.path.join(os.path.dirname(__file__), "..", "logs")
+REPORT_DIR = os.path.abspath(os.path.join(os.path.dirname(__file__), "..", "logs"))
 
 
 @staticmethod
@@ -178,6 +178,8 @@ def save_report(eval_output: Dict[str, Any], output_dir: str = REPORT_DIR) -> st
     timestamp = datetime.utcnow().strftime("%Y%m%d_%H%M%S")
     csv_path = os.path.join(output_dir, f"evaluation_{timestamp}.csv")
     json_path = os.path.join(output_dir, f"evaluation_{timestamp}.json")
+    csv_path = os.path.abspath(csv_path)
+    json_path = os.path.abspath(json_path)
 
     # CSV
     fieldnames = [

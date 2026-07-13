@@ -92,7 +92,21 @@ python -m rag.ingest
 streamlit run app.py
 ```
 
-### 5. Docker (Alternative)
+### 5. Run in the Terminal
+```bash
+python cli.py
+```
+
+Terminal commands inside the CLI:
+```text
+/reset           Clear conversation memory
+/prompt V1       Switch to prompt version V1
+/prompt V2       Switch to prompt version V2
+/prompt V3       Switch to prompt version V3
+/exit            Quit the CLI
+```
+
+### 6. Docker (Alternative)
 ```bash
 docker-compose up --build
 ```
